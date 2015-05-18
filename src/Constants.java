@@ -12,4 +12,6 @@ public interface Constants
 	int PRINT_DATE = 2;
 	
 	int NAME_ERROR = -3;
+	
+	int gittest = 100;
 }
