@@ -26,7 +26,10 @@ interface CLOSE_ACCOUNT
 
 class BankManager 
 {
-	
+	private void testGithub()
+	{
+		System.out.println("test git");
+	}	
 	public void enrollCustomerAndBankAcc(ClientList clientList)
 	{	
 		Scanner s = new Scanner(System.in);
