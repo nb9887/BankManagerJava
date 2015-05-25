@@ -1,3 +1,4 @@
+import java.text.ParseException;
 import java.util.Scanner;
 
 interface TELLER
@@ -56,7 +57,7 @@ class MenuViewer
 		
 	}
 	
-	public void printClientMenu(ClientList clientList, String name)
+	public void printClientMenu(ClientList clientList, String name) throws Exception
 	{
 		ClientManager clientManager = new ClientManager();
 		Scanner input = new Scanner(System.in);

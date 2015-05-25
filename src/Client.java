@@ -7,7 +7,6 @@ class Client implements Serializable
 	private String name;
 	private String address;
 	private String phoneNum;
-	private int maxLoan; //대출한도
 	private ArrayList<BankAccount> bankAccList; 
 	
 	public Client(String name, String address, String phoneNum)
@@ -72,6 +71,4 @@ class Client implements Serializable
 		}
 		return str.toString();
 	}
-	
-
 }

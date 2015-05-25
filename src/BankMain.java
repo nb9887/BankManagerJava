@@ -1,3 +1,4 @@
+import java.text.ParseException;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -10,7 +11,7 @@ interface BIG_MENU
 class BankMain
 {
 
-	public static void main(String[] args)
+	public static void main(String[] args) throws Exception
 	{
 		
 		MenuViewer menuViewer = new MenuViewer();
@@ -51,28 +52,10 @@ class BankMain
 						}
 						else if(i==clientList.getClientList().size()-1&&name.compareTo(clientList.getClientList().get(i).getName())!=0)
 						{
-							System.out.println("고객이존재하지않습니다");
-						}
-					}
-						
-				/*	for(int i = 0 ; i <clientList.getClientList().size();i++)
-					{
-						if(name.compareTo(clientList.getClientList().get(i).getName())==0)
-						{
-							current = clientList.getClientList().get(i);
+							System.out.println("고객이 존재하지 않습니다");
 							break;
 						}
 					}
-				
-					if(current!=null)
-					{
-						menuViewer.printClientMenu(clientList, name);
-						break;
-					}
-					else
-						System.out.println("해당 고객이 존재하지 않습니다");
-						break;		
-						*/
 			}
 				
 		}

@@ -26,10 +26,6 @@ interface CLOSE_ACCOUNT
 
 class BankManager 
 {
-	private void testGithub()
-	{
-		System.out.println("test git");
-	}	
 	public void enrollCustomerAndBankAcc(ClientList clientList)
 	{	
 		Scanner s = new Scanner(System.in);
@@ -90,34 +86,6 @@ class BankManager
 		
 		removeAccountInfo(clientList,name);
 	}
-	
-	
-		/*
-		for(int i = 0 ; i<clientList.getClientList().size();i++)
-		{
-			if(name.compareTo(clientList.getClientList().get(i).getName())==0)
-			{
-				for(int j = 0 ;j <clientList.getClientList().get(i).getBankAccList().size();j++)
-				{
-			//	if(clientList.getClientList().get(i).getBankAccList().get(j).getBalance()>0)
-			//		System.out.println("통장에 잔액이 있기 때문에 삭제가 불가능 합니다");
-					
-				if(clientList.getClientList().get(i).getBankAccList().size()==1)
-				{
-					if(clientList.getClientList().get(i).getBankAccList().get(j).getBalance()==0)
-					{
-						System.out.println("고객을 삭제합니다");
-						clientList.getClientList().remove(i);
-					}
-				}		
-					
-			}
-				
-		}
-			
-		}*/
-		
-	
 	
 	private void removeAccountInfo(ClientList clientList, String name)
 	{
@@ -277,21 +245,7 @@ class BankManager
 		}
  
 	}
-	/*
-	private String getCheckAccountId()
-	{
-		int id = getFirst(100,999);
-		int idd = getSecond(1000,9999);
-		return ("001-" +String.valueOf(id) +"-"+String.valueOf(idd));
-	}
 	
-	private String getMinusAccountId()
-	{
-		int id = getFirst(100,999);
-		int idd = getSecond(1000,9999);
-		return ("002-" +String.valueOf(id) +"-"+String.valueOf(idd));	
-	}
-	*/
 	private int getFirst(int n1, int n2)
 	{
 		return (int) (Math.random() * (n2 - n1 + 1)) + n1;
