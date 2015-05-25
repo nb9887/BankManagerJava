@@ -7,11 +7,17 @@ public interface Constants
 	
 	String CHECKING_ACCOUNT = "CHECKING ACCOUNT";
 	String MINUS_ACCOUNT = "MINUS ACCOUNT";
-	
+	String RECEIVER_NAME_ERROR = "Wrong Receiver Name";
+	int PRINT_TODAY_STATEMENT = 1;
+	int PRINT_WEEK_STATEMENT = 2;
+	int PRINT_MONTH_STATEMENT = 3;
 	int PRINT_ALL = 1;
 	int PRINT_DATE = 2;
+	int WRONG_DEPOSIT_INPUT= 9;
 	
 	int NAME_ERROR = -3;
-	
-	int gittest = 100;
+	int BANK_ACCOUNT_ERROR = -4;
+	int WITHDRAW_MONEY_ERROR = -5;
+	int RECEIVER_INDEX_ERROR = -6;
+	int RECEIVER_BANK_ACCOUNT_INDEX_ERROR = -7;
 }

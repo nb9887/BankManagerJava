@@ -7,12 +7,13 @@ class MoneyLog implements Serializable
 {
 	
 	private String type; // 입금 or 출금
-	private String time; // 시간
+	private Date time;
+//	private String time; // 시간
 	private String owner; //송금자
 	private String receiver; //수신자
 	private int money; //잔액
 	
-	public MoneyLog(String type, String time, String owner, int money)
+	public MoneyLog(String type, Date time, String owner, int money)
 	{
 		this.type = type;
 		this.time = time;
@@ -21,7 +22,7 @@ class MoneyLog implements Serializable
 		this.money = money;
 	}
 	
-	public MoneyLog(String type, String time, String owner, String receiver, int money) //계좌이체 
+	public MoneyLog(String type, Date time, String owner, String receiver, int money) //계좌이체 
 	//누가 받았는지
 	{
 		this.type = type;
@@ -30,12 +31,18 @@ class MoneyLog implements Serializable
 		this.receiver = receiver;
 		this.money = money;
 	}
-	
-	public String getDate()
+
+	public Date getDate()
 	{
 		return this.time;
 	}
 	
+	/*	
+	public String getDate()
+	{
+		return this.time;
+	}
+	*/
 	public String getName()
 	{
 		return this.owner;
